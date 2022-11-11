@@ -8,14 +8,14 @@
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <title>Usuarios</title>
         <link href="css/styleuserlist.css" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="./css/all.min.css" >
-    <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+        <link rel="stylesheet" type="text/css" href="./css/all.min.css" >
+        <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
     </head>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg==" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.min.js" integrity="sha384-IDwe1+LCz02ROU9k972gdyvl+AESN10+x7tBKgc9I5HFtuNz0wWnPclzo6p9vxnk" crossorigin="anonymous"></script>
     <script src="https://kit.fontawesome.com/56a4a469be.js" crossorigin="anonymous"></script>
-    <body style="background-color: #2c0c3c">
+    <body style="background-color: #331E4D">
         <nav class="navbar navbar-expand-lg" style="background-color: lightgoldenrodyellow">
             <div class="container-fluid">
                 <a class="navbar-brand" href="usuarios.jsp">Portfólio - Cláudio Carigé</a>
@@ -63,6 +63,11 @@
                 %>
             </div>
         </div>
+        <footer>
+
+            &COPY;2022 - Cláudio Carigé
+
+        </footer>
     </body>
 </html>
 <!-- Modal -->
@@ -70,7 +75,7 @@
     <div class="modal-dialog">
         <div class="modal-content">
             <div class="modal-header">
-                    <h3 class="modal-title fs-5" style="color: blue" id="exampleModalLabel">Inserir Usuário</h3>
+                <h3 class="modal-title fs-5" style="color: blue" id="exampleModalLabel">Inserir Usuário</h3>
             </div>
             <form id="cadastro-form" class="form" action="" method="post">
                 <div class="modal-body">

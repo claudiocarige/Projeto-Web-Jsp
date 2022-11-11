@@ -35,7 +35,7 @@
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.min.js" integrity="sha384-IDwe1+LCz02ROU9k972gdyvl+AESN10+x7tBKgc9I5HFtuNz0wWnPclzo6p9vxnk" crossorigin="anonymous"></script>
     <script src="https://kit.fontawesome.com/56a4a469be.js" crossorigin="anonymous"></script>
-    <body style="background-color: #2c0c3c">
+    <body style="background-color: #331E4D">
         <nav class="navbar navbar-expand-lg" style="background-color: lightgoldenrodyellow">
             <div class="container-fluid">
                 <a class="navbar-brand" href="usuarios.jsp">Portfólio - Cláudio Carigé</a>
@@ -46,9 +46,6 @@
                     <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                         <li class="nav-item">
                             <a class="nav-link active" aria-current="page" href="usuarios.jsp">Home</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link disabled">Disabled</a>
                         </li>
                     </ul>
                 </div>
@@ -61,7 +58,6 @@
                                 if (nomeSession == null) {
                                     response.sendRedirect("index.jsp");
                                 }
-
                             %>   
                         </small> </span>
                     <a href="logout.jsp"> <td><img src="./img/logout.png" width="25" alt="alt"/></td></a>
@@ -70,7 +66,6 @@
         </nav>  
         <div class="container-fluid">
             <div class="row mt-5 mb-4">
-                <button type="button" class="btn-info btn-sm butttonUsuario" data-bs-toggle="modal" data-bs-target="#modal"">Novo Usuário</button>
                 <form class="form-inline my-2 my-lg-0 direita" role="search" method="post">
                     <input class="form-control form-control-sm mr-sm-2" type="search" name="txtbuscar" placeholder="Buscar pelo nome" aria-label="Search">
                     <button class="btn btn-outline-info btn-sm my-2 my-sm-0" type="submit" name="btn-buscar">Buscar</button>
@@ -115,64 +110,13 @@
                 </tbody>
             </table>    
         </div>
+        <footer>
+
+            &COPY;2022 - Cláudio Carigé
+
+        </footer>
     </body>
 </html>
-<!-- Modal -->
-<div class="modal " id="modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-    <div class="modal-dialog">
-        <div class="modal-content">
-            <div class="modal-header">
-                <h3 class="modal-title fs-5" style="color: blue" id="exampleModalLabel">Inserir Usuário</h3>
-                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
-                    <span aria-hidden>&times;</span>
-                </button>
-            </div>
-            <form id="cadastro-form" class="form" action="" method="post">
-                <div class="modal-body">
-
-                    <div class="form-group">
-                        <label for="username" class="text-info">Nome</label><br>
-                        <input type="text" name="txtnome" id="txtnome" class="form-control" required>
-                    </div>
-                    <div class="form-group">
-                        <label for="username" class="text-info">Usuário</label><br>
-                        <input type="text" name="txtusuario" id="txtusuario" class="form-control" required>
-                    </div>
-                    <div class="form-group">
-                        <label for="password" class="text-info">Senha</label><br>
-                        <input type="text" name="txtsenha" id="txtsenha" class="form-control" required>
-                    </div>
-                    <div class="form-group">
-                        <label for="FormControlSelect" class="text-info">Nível</label>
-                        <select class="form-control" name="txtnivel" id="txtnivel">
-                            <option selected>Selecione</option>
-                            <option value="comum">Comum</option>
-                            <option value="admin">Admin</option>
-
-                        </select>
-                    </div>
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
-                    <button type="submit" name="btn-salvar" class="btn btn-primary">Salvar</button>
-                </div>
-            </form>
-        </div>
-    </div>
-</div>
-
-<%    if (request.getParameter("btn-salvar") != null) {
-        Usuario usuario3 = new Usuario();
-        usuario3.setNome(request.getParameter("txtnome"));
-        usuario3.setUsuario(request.getParameter("txtusuario"));
-        usuario3.setSenha(request.getParameter("txtsenha"));
-        usuario3.setNivel(request.getParameter("txtnivel"));
-        if (usuario.getNivel().equals("admin")) {
-            UsuarioDao usuarioDao = DaoFactory.createUsuarioDao();
-            usuarioDao.insert(usuario3);
-            response.setIntHeader("Refresh", 0);
-        }
-%>
 
 <%
     if (request.getParameter("funcao") != null && request.getParameter("funcao").equals("excluir")) {

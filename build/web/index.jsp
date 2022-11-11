@@ -50,35 +50,39 @@
                                     <input type="submit" name="submit" class="btn btn-info btn-md"  value="Logar">
                                 </div>
                                 <div id="register-link" class="text-right">
-                                    <a type="button" name="btn-cadastrar" class="text-info" data-bs-toggle="modal" data-bs-target="#modal">Cadastre-se</a>
+                                    <a name="btn-cadastrar" class="text-info" data-bs-toggle="modal" data-bs-target="#modal" style="cursor: pointer; color: blueviolet; text-align: right" >Cadastre-se</a>
                                 </div>
                             </form>
                         </div>
                     </div>
-                </div>
-                <p class="text-light mt-2" align="center"> 
-                    <%// 
-                        Usuario obj = new Usuario();
-                        obj.setUsuario(request.getParameter("txtusuario"));
-                        obj.setSenha(request.getParameter("txtsenha"));
+                </div>  
 
-                        UsuarioDao usuarioDao = DaoFactory.createUsuarioDao();
-                        Usuario usuario = usuarioDao.findByNameLogin(obj);
+                <%// 
 
-                        if (obj.getUsuario() == null || obj.getSenha() == null) {
-                            out.println("Prencha os dados!");
-                        } else if (usuario == null) {
-                            response.sendRedirect("index.jsp");
-                            out.print("Dados incorretos");
-                        } else {
+                    String user = request.getParameter("txtusuario");
+                    String pass = request.getParameter("txtsenha");
+                    Usuario obj = new Usuario();
+                    obj.setUsuario(user);
+                    obj.setSenha(pass);
+
+                    UsuarioDao usuarioDao = DaoFactory.createUsuarioDao();
+                    Usuario usuario = usuarioDao.findByNameLogin(obj);
+
+                    if (request.getParameter("submit") != null) {
+                        if (usuario != null) {
                             session.setAttribute("nomeUsuario", usuario.getUsuario());
                             response.sendRedirect("usuarios.jsp");
+
+                        } else {
+                            out.print("<script>alert('Dados incorretos!');</script>");
+
                         }
-                    %>
-                </p>
+                    }
+                %>
+
             </div>
         </div>
-        <button style="background-color:red; color: white" id="novo">Não CLIQUE AQUI</Button>
+
     </body>
 </html>
 <!-- Modal -->
@@ -136,3 +140,5 @@
         out.print("<script>alert('Usuário cadastrado com sucesso!');</script>");
     }
 %>
+
+

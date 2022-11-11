@@ -22,15 +22,9 @@ body {
 #login .container #login-row #login-column #login-box #login-form #register-link {
   margin-top: -85px;
 }
-#div3 {
-    width: 100px;
-    height: 100px;
-    display: inline-block;
+footer{
+    font-size: 6px;
+    color: currentColor;
+    text-align: center;
 }
-#div1 {
-    background-color: magenta;    
-}
-#div2 {
-    background-color: teal;
-}
- 
+
