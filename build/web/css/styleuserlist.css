@@ -1,0 +1,14 @@
+.direita{
+    position: absolute;
+    right: 30px;
+}
+.butttonUsuario{
+    position: absolute;
+    left: 30px;
+}
+
+.retornar{
+    position: fixed;
+    top: 300px;
+    right: 3000px;
+}

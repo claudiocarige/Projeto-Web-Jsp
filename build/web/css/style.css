@@ -1,0 +1,36 @@
+/* 
+    Created on : 04/11/2022, 23:44:06
+    Author     : ccari
+*/
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #17a2b8;
+  height: 100vh;
+}
+#login .container #login-row #login-column #login-box {
+  margin-top: 120px;
+  max-width: 600px;
+  height: 320px;
+  border: 1px solid #9C9C9C;
+  background-color: white;
+}
+#login .container #login-row #login-column #login-box #login-form {
+  padding: 20px;
+}
+#login .container #login-row #login-column #login-box #login-form #register-link {
+  margin-top: -85px;
+}
+#div3 {
+    width: 100px;
+    height: 100px;
+    display: inline-block;
+}
+#div1 {
+    background-color: magenta;    
+}
+#div2 {
+    background-color: teal;
+}
+ 
