@@ -1,0 +1,78 @@
+/*
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/CascadeStyleSheet.css to edit this template
+*/
+/* 
+    Created on : 11/11/2022, 16:46:07
+    Author     : ccari
+*/
+@keyframes animacao{
+    
+    0%{
+background-color:#3d009e;
+}
+    30%{
+background-color:#3300ff;
+}
+    40%{
+background-color:#cc00ff;
+}
+    70%{
+background-color:#331E4D;
+}
+    100%{
+background-color:#3d009e;
+}
+    
+}
+
+
+.navbar{
+    background-color: #331E4D;
+}
+.lightest-bg {
+    background-color: #d2d2d2;
+}
+.lightest-txt {
+    color: #d2d2d2;
+}
+.middle-bg {
+    background-color: #3d009e;
+    animation-name: animacao;
+    animation-duration: 12s; 
+}
+.middle-txt {
+    color: #737373;
+}
+.darkest-bg {
+
+}
+.darkest-txt {
+    color: #d2d2d2;
+}
+#img-java{
+    
+    position: absolute;
+    top: 1410px;
+    left: 210px;
+}
+.hide{
+    display: none;
+}
+
+.container .botao{
+    background-color: #3363d6; 
+    color: white;
+    box-shadow: 2px 2px #331E4D;    
+    border-radius: 10%;
+    
+}
+.logos{
+    padding-top: 1px;
+    margin-top: 9px;
+}
+.local1 a{
+    color:#e8e8e8;
+    Text-decoration: underline;
+    text-align: right;
+}

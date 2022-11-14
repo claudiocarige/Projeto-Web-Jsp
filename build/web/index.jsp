@@ -17,17 +17,26 @@
 <%@page import="Db.DB" %>
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
-<html>
+<html lang="pt-br">
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
         <title>Login</title>
         <link href="css/style.css" rel="stylesheet">
         <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg==" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.min.js" integrity="sha384-IDwe1+LCz02ROU9k972gdyvl+AESN10+x7tBKgc9I5HFtuNz0wWnPclzo6p9vxnk" crossorigin="anonymous"></script>
+        <script src="https://kit.fontawesome.com/56a4a469be.js" crossorigin="anonymous"></script>
+        <style>
+            img{
+                position: absolute;
+                top: 200px;
+                left: 50;
+            }
+
+        </style>
     </head>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg==" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.min.js" integrity="sha384-IDwe1+LCz02ROU9k972gdyvl+AESN10+x7tBKgc9I5HFtuNz0wWnPclzo6p9vxnk" crossorigin="anonymous"></script>
-    <script src="https://kit.fontawesome.com/56a4a469be.js" crossorigin="anonymous"></script>
     <body style="background-color: #2c0c3c">
         <div id="login">
             <h3 class="text-center text-white pt-5">Projeto Cláudio</h3>
@@ -75,13 +84,68 @@
 
                         } else {
                             out.print("<script>alert('Dados incorretos!');</script>");
-
                         }
                     }
                 %>
 
             </div>
+        <button class="text-info" type="button" id="novaestrela" width="50px" top="400px" target="_blank" >LUGAR</button>
+        <div id="estrelinha" >
         </div>
+        <!<!-- comment  <img src="img/vagalume.gif"  alt="Vagalume">-->
+        <script>
+
+            Class Estrela{
+            constructor(){
+            this.eixoX = 0;
+            this.eixoY = 0;
+            this.imageEl = document.createElement('img');
+            this.imageEl.src = 'img/vagalume.gif';
+            this.imageEl.alt = 'Vagalume';
+            document.querySelector('#estrelinha').appendChild(this.imageEl);
+            }
+            movimentar(){
+            this.eixoX += 2;
+            this.eixoY += 4;
+            if (this.eixoX > 1500){
+            this.eixoX = Math.floor(Math.random() * 1500);
+            }
+            if (this.eixoY >= 600){
+            this.eixoY = 0;
+            this.eixoX = Math.floor(Math.random() * 1500);
+            }
+            this.imageEl.style.left = this.eixoX + 'px';
+            this.imageEl.style.top = this.eixoY + 'px';
+            //this.imageEl.style.transform = 'translate(' + this.eixoX + 'px, '+ this.eixoY +'px)';
+            }
+
+            }
+//            let x = Math.floor(Math.random() * 1500);
+//            if( x < 100){
+//                x *= 4;
+//            }
+//            let y = 0;
+//            let imageEl = document.querySelector("img");
+
+            let stars = [new Estrela(), new Estrela(), new Estrela()];
+            setInterval(() => {
+//                x += 1;
+//                y += 15;
+//                if( x > 1500){
+//                   x = Math.floor(Math.random() * 1500);
+//                    
+//                }
+//                if(y >= 600){
+//                  y = 0;
+//                  x = Math.floor(Math.random() * 1500);
+//                }
+//                imageEl.style.left =  x + 'px';  
+//                imageEl.style.top =  y + 'px';  
+            for (let i = 0; i < stars.length; i++){
+            stars[i].movimentar();
+            }
+            }, 33);
+        </script>
 
     </body>
 </html>

@@ -129,3 +129,7 @@ ul{
 .our-webcoderskull .cnt-block .follow-us li .fa:hover{ 
    color:#025a8e;
 }
+
+.header{
+    background-color: rgba(0,0,0,.2);
+}

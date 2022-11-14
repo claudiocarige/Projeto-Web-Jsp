@@ -8,11 +8,11 @@
 <!DOCTYPE html>
 <html lang="pt-br">
     <head>
-        
-        <meta charset="UTF-8">
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>JSP Page</title>
-        <link href="css/experience.css" rel="stylesheet">
+        <link href="css/stylesobremim.css" rel="stylesheet">
         <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
         <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
         <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
@@ -41,8 +41,8 @@
                         <div class="bio-content">
                             <h1>Olá, sou Cláudio Carigé</h1>
                             <h6>Um lutador incansável na vida.</h6> 
-                            <h6>Buscando uma oportunidade para meu crescimento.</h6>  
-                            <h6>Humildade, honestidade, integridade, determinação, resiliência, persistência e paciência.</h6>  
+                            <h6>Atualmente estou buscando uma oportunidade para meu crescimento.</h6>  
+                            <h6>Humildade, honestidade, integridade, determinação, resiliência, persistência e paciência são algumas de minhas qualidade.</h6>  
                             <h6>Estou refazendo meus passos, voltando ao início, para trilhar uma nova jornada de sucesso no universo da Tecnologia.</h6> 
                             <h6>A resiliência me faz um ser humano que se reinventa a cada dia.</h6> 
                             <h6>Já fui motorista, cantor de banda, assistente de importação, empreendedor e mais algumas coisinhas...</h6> 

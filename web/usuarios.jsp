@@ -15,8 +15,9 @@
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 
-<head>
+<html lang="pt-br">
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
     <title>Portfolio Cláudio</title>
     <link href="css/usuario.css" rel="stylesheet">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -26,37 +27,36 @@
 
 </head>
 <body style="background-color: #331E4D">
-    <nav class="navbar navbar-expand-lg" style="background-color: lightgoldenrodyellow">
-        <div class="container-fluid">
-            <a class="navbar-brand" href="usuarios.jsp">Portfólio - Cláudio Carigé</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                    <li class="nav-item">
-                        <a class="nav-link" href="userlist.jsp">CRUD</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link disabled">Disabled</a>
-                    </li>
-                </ul>
-            </div>
-            <form class="form-inline my-2 my-lg-0">
-                <span class="m-3" style="color: lightseagreen"><small>
-                        <%
-                            String nomeSession = (String) session.getAttribute("nomeUsuario");
-                            out.print(nomeSession);
+    <section class="container darkest-bg fixed-top">
+        <nav class="navbar navbar-expand-lg " style="background-color: lightgoldenrodyellow; height: 50px">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="usuarios.jsp"><span style="color:#660066;">Portfólio - Cláudio Carigé</span></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link" href="userlist.jsp" style="color:#660066;">CRUD</a>
+                        </li>
+                    </ul>
+                </div>
+                <form class="form-inline my-2 my-lg-0">
+                    <span class="m-3" style="color: lightseagreen"><small>
+                            <%
+                                String nomeSession = (String) session.getAttribute("nomeUsuario");
+                                out.print(nomeSession);
 
-                            if (nomeSession == null) {
-                                response.sendRedirect("index.jsp");
-                            }
-                        %>   
-                    </small> </span>
-            </form>
-            <a href="logout.jsp"> <td><img src="./img/logout.png" width="25" alt="alt"/></td></a> 
-        </div>
-    </nav>
+                                if (nomeSession == null) {
+                                    response.sendRedirect("index.jsp");
+                                }
+                            %>   
+                        </small> </span>
+                </form>
+                <a href="logout.jsp"> <td><img src="./img/logout.png" width="25" alt="alt"/></td></a> 
+            </div>
+        </nav>
+    </section>
     <section class="our-webcoderskull padding-lg" >
         <div class="container">
             <div class="row heading heading-icon">
@@ -78,12 +78,7 @@
                     <div class="cnt-block equal-hight margim">
                         <figure><a href="experience.jsp" ><img src="img/experienciaoOk.png" class="img-responsive" style="height:160px; width: 160px" alt=""></a></figure>
                         <h3><a>Professional experience</a></h3>
-                        <p>Conheça minhas Experiências/p>
-<!--                        <ul class="follow-us clearfix">
-                            <li><a href="experience.jsp"><i class="fa fa-list" aria-hidden="true"></i></a></li>
-                            <li><a href="#"><i class="fa fa-baby" aria-hidden="true"></i></a></li>
-                            <li><a href="https://www.linkedin.com/in/claudio-carige-b7429b6b/" target="_blank"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
-                        </ul>-->
+                        <p>Conheça minhas Experiências</p>
                     </div>
                 </li>
                 <li class="col-12 col-md-6 col-lg-3">
@@ -91,11 +86,6 @@
                         <figure><a href="formation.jsp"><img src="img/courseOk.png" class="img-responsive" alt="" style="width: 160px; height: 160px"></a></figure>
                         <h3><a>Academic training</a></h3>
                         <p>Veja minha formação e  meus conhecimentos.</p>
-<!--                        <ul class="follow-us clearfix">
-                            <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
-                            <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
-                            <li><a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
-                        </ul>-->
                     </div>
                 </li>
                 <li class="col-12 col-md-6 col-lg-3">
@@ -103,16 +93,10 @@
                         <figure><a  href="userlist.jsp"><img src="img/crudOk.png" class="img-responsive" alt="" style="width: 160px; height: 160px"></a></figure>
                         <h3><a>CRUD </a></h3>
                         <p>Editar / Buscar / Excluir </p>
-<!--                        <ul class="follow-us clearfix">
-                            <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
-                            <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
-                            <li><a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
-                        </ul>-->
                     </div>
                 </li>
             </ul>
         </div>
     </section>
-
 </body>
 
