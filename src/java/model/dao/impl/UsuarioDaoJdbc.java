@@ -1,4 +1,4 @@
-package model.dao.impl;
+    package model.dao.impl;
 
 import Db.DB;
 import Db.DbException;
@@ -83,10 +83,8 @@ public class UsuarioDaoJdbc implements UsuarioDao {
             st = conn.prepareStatement("DELETE FROM usuarios WHERE Id = ?");
 
             st.setInt(1, id);
-            int rowAffect = st.executeUpdate();
-            if (rowAffect == 0) {
-                throw new DbException("Error! Id not found.");
-            }
+            st.executeUpdate();
+           
         } catch (SQLException e) {
             throw new DbException(e.getMessage());
         } finally {

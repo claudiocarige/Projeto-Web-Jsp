@@ -8,17 +8,20 @@
 <!DOCTYPE html>
 <html lang="pt-br">
     <head>
-        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <meta http-equiv="x-ua-compatible" content="ie=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="Content-Type" content="text/html">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="description" content="Portfólio de apresentação profissional na área de tecnologia">
+        <meta name="keywords" content="Java, JavaScript, Css, Html, Desenvolvedor, Desenvolvedor java">
+        <title>Portfolio de Cláudio Carigé, formação acadêmica e cursos e HardSkills.</title>
         <link href="css/styleformation.css" rel="stylesheet">
         <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
         <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
-        <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
         <script src="https://cdn.jsdelivr.net/gh/nespero/fluent-kit@1.2.0/js/fluent-kit.min.js"></script>
-        <title>Formation</title>
-        <script src="js/scripts.js" defer ></script>
+        <script src="js/jquery-3.6.1.min.js"></script>
     </head>
     <body>
         <section class="container darkest-bg fixed-top">
@@ -51,24 +54,24 @@
                                 %>   
                             </small> </span>
                     </form>
-                    <a href="logout.jsp"> <td><img src="./img/logout.png" width="25" alt="alt"/></td></a> 
+                    <a href="logout.jsp"> <td><img src="./img/logout.png" width="25" alt="Icone do Logout"/></td></a> 
                 </div>
             </nav>
         </section>
         <div class="container-fluid middle-bg py-5">
             <div class="container ">
                 <div class="row pt-5">
-                    
+
                     <div class="col-md-12">
-                        <div class="row">
+                        <div class="row head-a">
                             <div class="col-md-9">
                                 <h1 class="bold lightest-txt">UNIFACS</h1>
                             </div>
                             <div class="col-md-2 local1">
-                                <a href="#local1"><h5>Cursos</h5></a>
+                                <a href="#local1">Cursos</a>
                             </div>
-                            <div class="col-md-1 local1">
-                                <a href="#local2"><h5>HardSkills</h5></a>
+                            <div class="col-md- local1">
+                                <a href="#local2">HardSkills</a>
                             </div>
                         </div>
                         <p class="sub-h1 lightest-txt">Universidade Salvador - <span class="text-md-right" style="color: orange; font-size: 18px">Cursando 2º Sem.</span></p>
@@ -76,19 +79,19 @@
                     </div>
                 </div>  
                 <div class="row lightest-txt">
-                    <div class="col-md-2 py-5 text-center">
-                        <img src="img/FotoClaudio.jpg" class="img-fluid rounded-circle" width="150px">
+                    <div class="col-md-3 py-5 text-center">
+                        <img src="img/FotoClaudio.jpg" class="img-fluid rounded-circle" width="150px" alt="Foto de Cláudio Carigé">
                     </div>
-                    <div class="col-md-8">
+                    <div class="col-md-9">
                         <div class="col-md mt-5">
                             <p class="p1">
                                 Durante a pandemia de Covid19 tive que tomar muitas decisões, uma delas foi vender a minha parte na empresa onde eu era sócio. Logo depois dessa decisão, comecei a pensar em outra saida para minha vida, foi então que idealizei um projeto. Elaborei um projeto cultural,
                                 onde excrevi, aprovei e captei os recursos, além de executá-lo em 2022. Não satisfeito, eu mais uma vez tomei, e acho que foi a maior decisão da minha vida, parar tudo o que eu estava fazendo e estudar linguagem de programação. Voltei para faculdade para completar essa minha etapa da vida que havia deixado adormecida
                                 e continuar o curso de Sistemas de Informação. Também comecei a fazer um curso em linguagem Python, mas hoje estou estudando Java, nivel avançado, pois me encantei com esta linguagem, além de outros cursos que faço como: SCROM, SpringBoot e Padrões de projetos.                                               
-                                           
+
                             </p>
                         </div>
-                        
+
                     </div>
                 </div>
             </div>
@@ -252,55 +255,55 @@
             </div>
             <section class="hardskills">
                 <div class="container hide" id="segundo" >
-                    <img src="img/logojava.png" width="91" height="height" alt="Logo linguagem Java">
-                    <img src="img/logopython.png" width="91" height="height" alt="Logo linguagem Python">
-                    <img src="img/logohtml.png" width="91" height="height" alt="Logo linguagem HTML">
-                    <img src="img/logocss.png" width="91" height="height" alt="Logo linguagem CSS">
-                    <img src="img/logomysql.png" width="91" height="height" alt="Logo linguagem MySQL">
-                    <img src="img/logoflask.png" width="91" height="height" alt="Logo linguagem Flask">
-                    <img src="img/logobootstrap.png" width="91" height="height" alt="Logo linguagem BootStrap">
-                    <img src="img/logogit.png" width="91" height="height" alt="Logo linguagem Git">
-                    <img src="img/logogithub.png" width="91" height="height" alt="Logo linguagem GitHut">
+                    <img src="img/logojava.png" width="91" height="height" alt="Logo marca da linguagem Java">
+                    <img src="img/logopython.png" width="91" height="height" alt="Logo marca da linguagem Python">
+                    <img src="img/logohtml.png" width="91" height="height" alt="Logo marca da linguagem HTML">
+                    <img src="img/logocss.png" width="91" height="height" alt="Logo marca da linguagem CSS">
+                    <img src="img/logomysql.png" width="91" height="height" alt="Logo marca do Banco de dados MySQL">
+                    <img src="img/logoflask.png" width="91" height="height" alt="Logo marca da ferramenta Flask">
+                    <img src="img/logobootstrap.png" width="91" height="height" alt="Logo marca da ferramenta BootStrap">
+                    <img src="img/logogit.png" width="91" height="height" alt="Logo marca da ferramenta Git">
+                    <img src="img/logogithub.png" width="91" height="height" alt="Logo marca da ferramenta GitHut">
                     <img src="img/logojavascript.png" width="91" height="height" alt="Logo linguagem JavaScript">
-                    <img src="img/logojquery.png" width="91" height="height" alt="Logo linguagem JQuery">
+                    <img src="img/logojquery.png" width="91" height="height" alt="Logo marca da linguagem JQuery">
                 </div>
             </section>
-   
-                <div class="row">
-                    <div class="col text-center">
-                        <button class="botao" id="exibir3"><h3>Contato</h3></button>
-                        <p class="sub-h2">Onde me encontrar.</p>
-                    </div>
+
+            <div class="row">
+                <div class="col text-center" id="button-formation">
+                    <button class="botao" id="exibir3"><h3>Contato</h3></button>
+                    <p class="sub-h2">Onde me encontrar.</p>
                 </div>
-                <div class="row " >
-                    <div class="col-md-4 hide" id="terceiro">
-                        <ul class="list-view">
-                            <li class="group-name"><span style="font-size: 22px; ">Endereço:</span></li>
-                            <li>
-                                <strong class="lead">Rua Estevam Barbosa Alves,</strong></br>
-                                <span class="follow">nº 12, Qd.F</span>
-                                <span class="follow">Itapuã, </span>
-                            </li>
-                            <li class="group-name">Salvador /BA - Brasil</li>
-                            <li>
-                                <strong class="lead">
-                                    <!-- <i class="mi mi-Phone"></i> -->
-                                    +55 71 9 91125697
-                                </strong>
-                                <span class="follow">
-                                    <!-- <i class="mi mi-twitter"></i> -->
-                                    <em></em>
-                                </span>
-                                <span class="follow">
-                                    <li class="group-name">Salvador /BA - Brasil</li>
-                                    <li class="group-name"><a href="https://www.linkedin.com/in/claudio-carige-b7429b6b/" target="_blank" ><i class="mi mi-linkedin">Linkedin</i></a></li>
-                                    <em><a class="mi mi-github" target="_blank" href="https://github.com/claudiocarige">GitHub</a> Mayweather</em>
-                                </span>
-                            </li>
-                        </ul>
-                    </div>
+            </div>
+            <div class="row " >
+                <div class="col-md-4 hide" id="terceiro">
+                    <ul class="list-view">
+                        <li class="group-name"><span style="font-size: 22px; ">Endereço:</span></li>
+                        <li>
+                            <strong class="lead">Rua Estevam Barbosa Alves,</strong></br>
+                            <span class="follow">nº 12, Qd.F</span>
+                            <span class="follow">Itapuã, </span>
+                        </li>
+                        <li class="group-name">Salvador /BA - Brasil</li>
+                        <li>
+                            <strong class="lead">
+                                <!-- <i class="mi mi-Phone"></i> -->
+                                +55 71 9 91125697
+                            </strong>
+                            <span class="follow">
+                                <!-- <i class="mi mi-twitter"></i> -->
+                                <em></em>
+                            </span>
+                            <span class="follow">
+                                <li class="group-name">Salvador /BA - Brasil</li>
+                                <li class="group-name"><a href="https://www.linkedin.com/in/claudio-carige-b7429b6b/" target="_blank" ><i class="mi mi-linkedin">Linkedin</i></a></li>
+                                <em><a class="mi mi-github" target="_blank" href="https://github.com/claudiocarige">GitHub</a> Mayweather</em>
+                            </span>
+                        </li>
+                    </ul>
                 </div>
-         
+            </div>
+
         </div>
         <div class="col text-center my-5">
             <h2>Obrigado por acessar meu portfólio!</h2>
@@ -316,5 +319,38 @@
                 </button>
             </a>
         </div>
+        <script>
+            $(document).ready(function () {
+                var i = 0;
+                $("#exibir1").click(function () {
+                    i++;
+                    if (i === 1 || i % 2) {
+                        $("#primeiro").toggle("hide").fadeIn(6000);
+                        
+                    } else {
+                        $("#primeiro").toggle("hide").fadeOut(6000);
+                    }
+                });
+                var j = 0;
+                $("#exibir2").click(function () {
+                    j++;
+                    if (j === 1 || j % 2) {
+                        $("#segundo").toggle("hide").fadeIn(6000);
+                    } else {
+                        $("#segundo").toggle("hide").fadeOut(6000);
+                    }
+                });
+                var t = 0;
+                $("#exibir3").click(function () {
+                    t++;
+                    if (t === 1 || t % 2) {
+                        $("#terceiro").toggle("hide").fadeIn(6000);
+                    } else {
+                        $("#terceiro").toggle("hide").fadeOut(6000);
+                    }
+                });
+            });
+        </script>
+
     </body>
 </html>

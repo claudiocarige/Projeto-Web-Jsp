@@ -1,7 +1,3 @@
-/*
-Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
-Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/CascadeStyleSheet.css to edit this template
-*/
 /* 
     Created on : 13/11/2022, 23:25:48
     Author     : ccari
@@ -11,15 +7,10 @@ Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/CascadeStyleSheet.css
     0%{
         background-color:#3d009e;
     }
-    30%{
-        background-color:#3300ff;
+    50%{
+        background-color:#1b3ea4;
     }
-    40%{
-        background-color:#cc00ff;
-    }
-    70%{
-        background-color:#331E4D;
-    }
+ 
     100%{
         background-color:#3d009e;
     }
@@ -27,7 +18,7 @@ Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/CascadeStyleSheet.css
 }
 
 .navbar{
-    background-color: #331E4D;
+    background-color: #3d009e;
 }
 .lightest-bg {
     background-color: #d2d2d2;
@@ -38,7 +29,7 @@ Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/CascadeStyleSheet.css
 .middle-bg {
     background-color: #3d009e;
     animation-name: animacao;
-    animation-duration: 12s;
+    animation-duration: 9s;
 }
 .middle-txt {
     color: #737373;
@@ -74,6 +65,8 @@ Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/CascadeStyleSheet.css
     color:#e8e8e8;
     Text-decoration: underline;
     text-align: right;
+    font-size: 20px;
+    font-weight: bold;
 }
 .hardskills{
     background-color: #d5d5d5;
@@ -81,5 +74,11 @@ Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/CascadeStyleSheet.css
     border: 2px;
     text-align: center;
     padding: 0px;
-    
+}
+
+.container .botao .alteracor {
+    color: white;
+    box-shadow: 2px 2px #331E4D;
+    border-radius: 10%;
+    background-color: green;
 }

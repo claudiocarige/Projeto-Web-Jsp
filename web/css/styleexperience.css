@@ -1,29 +1,19 @@
-/*
-Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
-Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/CascadeStyleSheet.css to edit this template
-*/
-/* 
-    Created on : 11/11/2022, 16:46:07
+/*    Created on : 11/11/2022, 16:46:07
     Author     : ccari
 */
 @keyframes animacao{
-    
-    0%{
-background-color:#3d009e;
-}
-    30%{
-background-color:#3300ff;
-}
-    40%{
-background-color:#cc00ff;
-}
-    70%{
-background-color:#331E4D;
-}
+
+  0%{
+        background-color:#3d009e;
+    }
+    50%{
+        background-color:#1b3ea4;
+    }
+ 
     100%{
-background-color:#3d009e;
-}
-    
+        background-color:#3d009e;
+    }
+
 }
 
 
@@ -39,7 +29,7 @@ background-color:#3d009e;
 .middle-bg {
     background-color: #3d009e;
     animation-name: animacao;
-    animation-duration: 12s; 
+    animation-duration: 9s;
 }
 .middle-txt {
     color: #737373;
@@ -51,7 +41,7 @@ background-color:#3d009e;
     color: #d2d2d2;
 }
 #img-java{
-    
+
     position: absolute;
     top: 1410px;
     left: 210px;
@@ -61,11 +51,11 @@ background-color:#3d009e;
 }
 
 .container .botao{
-    background-color: #3363d6; 
+    background-color: #3363d6;
     color: white;
-    box-shadow: 2px 2px #331E4D;    
+    box-shadow: 2px 2px #331E4D;
     border-radius: 10%;
-    
+
 }
 .logos{
     padding-top: 1px;
@@ -75,4 +65,15 @@ background-color:#3d009e;
     color:#e8e8e8;
     Text-decoration: underline;
     text-align: right;
+    font-size: 20px;
+    font-weight: bold;
+
 }
+.small_img{
+    width: 23%;
+    margin: 0.3rem 0.4rem;
+    
+}
+
+
+/*FIM DA JANELA MODAL*/

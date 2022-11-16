@@ -8,21 +8,24 @@
 <!DOCTYPE html>
 <html lang="pt-br">
     <head>
-        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <meta http-equiv="x-ua-compatible" content="ie=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>JSP Page</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="Content-Type" content="text/html">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="description" content="Portfólio de apresentação profissional na área de tecnologia">
+        <meta name="keywords" content="Java, JavaScript, Css, Html, Desenvolvedor, Desenvolvedor java">
+        <title>Portfolio de Cláudio Carigé, sobre mim.</title>
         <link href="css/stylesobremim.css" rel="stylesheet">
         <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
         <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
-        <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script src="js/jquery-3.6.1.min.js"></script>
     </head>
     <body>
-        <div class="container portfolio">
+        <div class="container portfolio hide" id="opcao1">
             <div class="row">
                 <div class="col-md-12">
                     <div class="heading">				
-                        <h6 class="text-info">Software Engineer</h6> 
+                        <h5>Software Engineer</h5> 
                     </div>
                 </div>	
             </div>
@@ -42,7 +45,7 @@
                             <h1>Olá, sou Cláudio Carigé</h1>
                             <h6>Um lutador incansável na vida.</h6> 
                             <h6>Atualmente estou buscando uma oportunidade para meu crescimento.</h6>  
-                            <h6>Humildade, honestidade, integridade, determinação, resiliência, persistência e paciência são algumas de minhas qualidade.</h6>  
+                            <h6>Humildade, honestidade, integridade, determinação, resiliência, persistência e paciência são algumas de minhas qualidades.</h6>  
                             <h6>Estou refazendo meus passos, voltando ao início, para trilhar uma nova jornada de sucesso no universo da Tecnologia.</h6> 
                             <h6>A resiliência me faz um ser humano que se reinventa a cada dia.</h6> 
                             <h6>Já fui motorista, cantor de banda, assistente de importação, empreendedor e mais algumas coisinhas...</h6> 
@@ -55,21 +58,22 @@
                             <p>Sou um apaixonado por programação.</p>
                         </div>
                     </div>
-
                 </div>	
-               
-                    
-                        <a href="usuarios.jsp" class="text-info">Voltar</a>
-                    
-               
+                <a  id="voltar">Voltar</a>
             </div>
-
         </div>
         <footer>
-            
             &COPY;2022 - Cláudio Carigé
-            
         </footer>
+        <script>
+            $(document).ready(function () {
+                $("#opcao1").toggle("hide").fadeIn(12000);
+                $("#voltar").click(function () {
+                    $("#opcao1").toggle("hide").fadeOut(2000);                   
+                    location.href ="usuarios.jsp";
+                });
+            });
+        </script>
     </body>
 </html>
 

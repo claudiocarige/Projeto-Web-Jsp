@@ -23,52 +23,57 @@
 <!DOCTYPE html>
 <html lang="pt-br">
     <head>
-        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <meta http-equiv="x-ua-compatible" content="ie=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>Usuarios</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="Content-Type" content="text/html">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="description" content="Portfólio de apresentação profissional na área de tecnologia">
+        <meta name="keywords" content="Java, JavaScript, Css, Html, Desenvolvedor, Desenvolvedor java">
+        <title>Portfólio Cláudio Carigé, página de operações de CRUD..</title>
         <link href="css/styleuserlist.css" rel="stylesheet">
         <link rel="stylesheet" type="text/css" href="./css/all.min.css" >
         <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg==" crossorigin="anonymous"></script>
-        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.min.js" integrity="sha384-IDwe1+LCz02ROU9k972gdyvl+AESN10+x7tBKgc9I5HFtuNz0wWnPclzo6p9vxnk" crossorigin="anonymous"></script>
-        <script src="https://kit.fontawesome.com/56a4a469be.js" crossorigin="anonymous"></script>
-    </head>
-    <body style="background-color: #331E4D">
-        <section class="container darkest-bg fixed-top">
-            <nav class="navbar navbar-expand-lg" style="background-color: lightgoldenrodyellow; height: 50px">
-                <div class="container-fluid">
-                    <a class="navbar-brand" href="usuarios.jsp"><span style="color:#660066;">Portfólio - Cláudio Carigé</span></a>
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                            <li class="nav-item">
-                                <a class="nav-link active" aria-current="page" href="usuarios.jsp" style="color:#660066;">Home</a>
-                            </li>
-                        </ul>
-                    </div>
-                    <form class="form-inline my-2 my-lg-0">
-                        <span class="m-3" style="color: lightseagreen"><small>
-                                <%
-                                    String nomeSession = (String) session.getAttribute("nomeUsuario");
-                                    out.print(nomeSession);
 
-                                    if (nomeSession == null) {
-                                        response.sendRedirect("index.jsp");
-                                    }
-                                %>   
-                            </small> </span>
-                        <a href="logout.jsp"> <td><img src="./img/logout.png" width="25" alt="alt"/></td></a>
-                    </form>
+    </head>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg==" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.min.js" integrity="sha384-IDwe1+LCz02ROU9k972gdyvl+AESN10+x7tBKgc9I5HFtuNz0wWnPclzo6p9vxnk" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/56a4a469be.js" crossorigin="anonymous"></script>
+    <body style="background-color: #2c0c3c">
+        <nav class="navbar navbar-expand-lg" style="background-color: lightgoldenrodyellow">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="usuarios.jsp">Portfólio - Cláudio Carigé</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="usuarios.jsp">Home</a>
+                        </li>
+                    </ul>
                 </div>
-            </nav> 
-        </section></br></br>
-        <div class="container-fluid " >
+                <form class="form-inline my-2 my-lg-0">
+                    <span class="m-3" style="color: lightseagreen"><small>
+                            <%
+                                String nomeSession = (String) session.getAttribute("nomeUsuario");
+                                out.print(nomeSession);
+                                if (nomeSession == null) {
+                                    response.sendRedirect("index.jsp");
+                                }
+                            %>   
+                        </small> </span>
+                    <a href="logout.jsp"> <td><img src="./img/logout.png" width="25" alt="alt"/></td></a>
+                </form>
+            </div>
+        </nav>  
+
+        <div class="container-fluid">
             <div class="row mt-5 mb-4">
+                <a href="userlist.jsp" class="btn btn-outline-success " id="buttonUsuario">Listar Todos</a>
+             
                 <form class="form-inline my-2 my-lg-0 direita" role="search" method="post">
+                    <!--<a href="userlist.jsp" class="btn btn-outline-info" style="left:0;">Listar Todos</a>-->
                     <input class="form-control form-control-sm mr-sm-2" type="search" name="txtbuscar" placeholder="Buscar pelo nome" aria-label="Search">
                     <button class="btn btn-outline-info btn-sm my-2 my-sm-0" type="submit" name="btn-buscar">Buscar</button>
                 </form>
@@ -99,9 +104,9 @@
                         for (Usuario usuario2 : list) {
                     %> 
                     <tr style="font-size: 15px; color: khaki">
-                        <th><%=usuario2.getNome()%></th>
+                        <th><%=usuario2.getId()%></th>
+                        <td><%=usuario2.getNome()%></td>
                         <td><%=usuario2.getUsuario()%></td>
-                        <td><%=usuario2.getSenha()%></td>
                         <td><%=usuario2.getNivel()%></td>
                         <td><a href="editarusuario.jsp?id=<%=usuario2.getUsuario()%>"  type="button" class="text-info" data-ls-module="modal" data-action="editarusuario.jsp"><i class="fa fa-edit fa-lg"></i></a></td>
                         <td><a href="userlist.jsp?funcao=excluir&id=<%=usuario2.getId()%>" class="text-danger"><i class="fa fa-trash-alt fa-lg"></i></a></td>
@@ -112,13 +117,10 @@
                 </tbody>
             </table>    
         </div>
-        <footer>
-
-            &COPY;2022 - Cláudio Carigé
-
-        </footer>
     </body>
 </html>
+
+
 
 <%
     if (request.getParameter("funcao") != null && request.getParameter("funcao").equals("excluir")) {
@@ -133,8 +135,7 @@
             usuarioDao2.deleteById(id);
             response.sendRedirect("userlist.jsp");
         } else {
-            out.print("<script>alert('Seu nível não permite excluir usuários!');</script>");
-
+            out.print("<script>alert('Seu nível não permite excluir usuários! Procure o Administrador da aplicação!');</script>");
         }
     }
 %>

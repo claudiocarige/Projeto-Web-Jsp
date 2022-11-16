@@ -5,10 +5,13 @@
 <!DOCTYPE html>
 <html lang="pt-br">
     <head>
-        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <meta http-equiv="x-ua-compatible" content="ie=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>Usuarios</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="Content-Type" content="text/html">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="description" content="Portfólio de apresentação profissional na área de tecnologia">
+        <meta name="keywords" content="Java, JavaScript, Css, Html, Desenvolvedor, Desenvolvedor java">
+        <title>Portfolio de Cláudio Carigé, Editar usuário.</title>
         <link href="css/styleuserlist.css" rel="stylesheet">
         <link rel="stylesheet" type="text/css" href="./css/all.min.css" >
         <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
@@ -50,7 +53,7 @@
                                 document.getElementById('txtnome').value = <%=usuario2.getNome()%>;
                                 </script>
                             </small> </span>
-                        <a href="logout.jsp"> <td><img src="./img/logout.png" width="25" alt="alt"/></td></a>
+                        <a href="logout.jsp"> <td><img src="./img/logout.png" width="25" alt="Icone de Logout"/></td></a>
                     </form>
                 </div>
             </nav>  
@@ -97,7 +100,7 @@
                         <select class="form-control" name="txtnivel" id="txtnivel">
                             <option selected>Selecione</option>
                             <option value="comum">Comum</option>
-                            <option value="admin">Admin</option>
+                            <option value="admin">Recruiter</option>
                         </select>
                     </div>
                 </div>

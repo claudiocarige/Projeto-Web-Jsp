@@ -1,21 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project-private xmlns="http://www.netbeans.org/ns/project-private/1">
-    <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
+    <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="3"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/D:/dev/Curso%20Java/WebApplicationJsp/web/css/styleexperience.css</file>
+            <file>file:/D:/dev/Curso%20Java/WebApplicationJsp/web/css/styleuserlist.css</file>
             <file>file:/D:/dev/Curso%20Java/WebApplicationJsp/web/css/stylesobremim.css</file>
-            <file>file:/D:/dev/Curso%20Java/WebApplicationJsp/web/js/scripts.js</file>
-            <file>file:/D:/dev/Curso%20Java/WebApplicationJsp/web/index.jsp</file>
-            <file>file:/D:/dev/Curso%20Java/WebApplicationJsp/web/usuarios.jsp</file>
-            <file>file:/D:/dev/Curso%20Java/WebApplicationJsp/web/css/usuario.css</file>
-            <file>file:/D:/dev/Curso%20Java/WebApplicationJsp/web/formation.jsp</file>
             <file>file:/D:/dev/Curso%20Java/WebApplicationJsp/web/sobremim.jsp</file>
-            <file>file:/D:/dev/Curso%20Java/WebApplicationJsp/web/css/style.css</file>
             <file>file:/D:/dev/Curso%20Java/WebApplicationJsp/src/java/application/Program.java</file>
             <file>file:/D:/dev/Curso%20Java/WebApplicationJsp/web/editarusuario.jsp</file>
             <file>file:/D:/dev/Curso%20Java/WebApplicationJsp/web/userlist.jsp</file>
-            <file>file:/D:/dev/Curso%20Java/WebApplicationJsp/web/experience.jsp</file>
+            <file>file:/D:/dev/Curso%20Java/WebApplicationJsp/web/usuarios.jsp</file>
         </group>
     </open-files>
 </project-private>

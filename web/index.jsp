@@ -19,25 +19,21 @@
 <!DOCTYPE html>
 <html lang="pt-br">
     <head>
-        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <meta http-equiv="x-ua-compatible" content="ie=edge">
-        <title>Login</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="Content-Type" content="text/html">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="description" content="Portfólio de apresentação profissional na área de tecnologia">
+        <meta name="keywords" content="Java, JavaScript, Css, Html, Desenvolvedor, Desenvolvedor java">
+        <title>Portfolio de Cláudio Carigé, Login e cadastro.</title>
         <link href="css/style.css" rel="stylesheet">
         <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg==" crossorigin="anonymous"></script>
         <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.min.js" integrity="sha384-IDwe1+LCz02ROU9k972gdyvl+AESN10+x7tBKgc9I5HFtuNz0wWnPclzo6p9vxnk" crossorigin="anonymous"></script>
         <script src="https://kit.fontawesome.com/56a4a469be.js" crossorigin="anonymous"></script>
-        <style>
-            img{
-                position: absolute;
-                top: 200px;
-                left: 50;
-            }
-
-        </style>
     </head>
-    <body style="background-color: #2c0c3c">
+    <body class="body-back">
         <div id="login">
             <h3 class="text-center text-white pt-5">Projeto Cláudio</h3>
             <div class="container">
@@ -59,21 +55,19 @@
                                     <input type="submit" name="submit" class="btn btn-info btn-md"  value="Logar">
                                 </div>
                                 <div id="register-link" class="text-right">
-                                    <a name="btn-cadastrar" class="text-info" data-bs-toggle="modal" data-bs-target="#modal" style="cursor: pointer; color: blueviolet; text-align: right" >Cadastre-se</a>
+                                    <a name="btn-cadastrar" class="text-info" data-bs-toggle="modal" data-bs-target="#modal" style="cursor: pointer; color: blueviolet; text-align: right; font-size: 20px" >Cadastre-se</a>
                                 </div>
                             </form>
                         </div>
                     </div>
                 </div>  
-
                 <%// 
-
                     String user = request.getParameter("txtusuario");
                     String pass = request.getParameter("txtsenha");
+        
                     Usuario obj = new Usuario();
                     obj.setUsuario(user);
                     obj.setSenha(pass);
-
                     UsuarioDao usuarioDao = DaoFactory.createUsuarioDao();
                     Usuario usuario = usuarioDao.findByNameLogin(obj);
 
@@ -81,72 +75,12 @@
                         if (usuario != null) {
                             session.setAttribute("nomeUsuario", usuario.getUsuario());
                             response.sendRedirect("usuarios.jsp");
-
                         } else {
                             out.print("<script>alert('Dados incorretos!');</script>");
                         }
                     }
                 %>
-
             </div>
-        <button class="text-info" type="button" id="novaestrela" width="50px" top="400px" target="_blank" >LUGAR</button>
-        <div id="estrelinha" >
-        </div>
-        <!<!-- comment  <img src="img/vagalume.gif"  alt="Vagalume">-->
-        <script>
-
-            Class Estrela{
-            constructor(){
-            this.eixoX = 0;
-            this.eixoY = 0;
-            this.imageEl = document.createElement('img');
-            this.imageEl.src = 'img/vagalume.gif';
-            this.imageEl.alt = 'Vagalume';
-            document.querySelector('#estrelinha').appendChild(this.imageEl);
-            }
-            movimentar(){
-            this.eixoX += 2;
-            this.eixoY += 4;
-            if (this.eixoX > 1500){
-            this.eixoX = Math.floor(Math.random() * 1500);
-            }
-            if (this.eixoY >= 600){
-            this.eixoY = 0;
-            this.eixoX = Math.floor(Math.random() * 1500);
-            }
-            this.imageEl.style.left = this.eixoX + 'px';
-            this.imageEl.style.top = this.eixoY + 'px';
-            //this.imageEl.style.transform = 'translate(' + this.eixoX + 'px, '+ this.eixoY +'px)';
-            }
-
-            }
-//            let x = Math.floor(Math.random() * 1500);
-//            if( x < 100){
-//                x *= 4;
-//            }
-//            let y = 0;
-//            let imageEl = document.querySelector("img");
-
-            let stars = [new Estrela(), new Estrela(), new Estrela()];
-            setInterval(() => {
-//                x += 1;
-//                y += 15;
-//                if( x > 1500){
-//                   x = Math.floor(Math.random() * 1500);
-//                    
-//                }
-//                if(y >= 600){
-//                  y = 0;
-//                  x = Math.floor(Math.random() * 1500);
-//                }
-//                imageEl.style.left =  x + 'px';  
-//                imageEl.style.top =  y + 'px';  
-            for (let i = 0; i < stars.length; i++){
-            stars[i].movimentar();
-            }
-            }, 33);
-        </script>
-
     </body>
 </html>
 <!-- Modal -->
@@ -178,7 +112,7 @@
                         <select class="form-control" name="txtnivel" id="txtnivel">
                             <option selected>Selecione</option>
                             <option value="comum">Comum</option>
-                            <option value="admin">Admin</option>
+                            <option value="admin">Recruiter</option>
                         </select>
                     </div>
                 </div>
@@ -199,8 +133,6 @@
 
         UsuarioDao usuarioDao2 = DaoFactory.createUsuarioDao();
         usuarioDao2.insert(usuario2);
-
-        // response.setIntHeader("Refresh", 0);
         out.print("<script>alert('Usuário cadastrado com sucesso!');</script>");
     }
 %>
