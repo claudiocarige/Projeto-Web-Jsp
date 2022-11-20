@@ -1,8 +1,14 @@
+
 .direita{
     position: absolute;
     right: 30px;
+    margin: 10px 0 0 0 ;
+    padding: 40px 0 0 0 ;
 }
-
+.listar{
+      margin: 30px 0 0 0 ;
+    padding:  40px 0 0 0 ;
+}
 .retornar{
     position: fixed;
     top: 300px;

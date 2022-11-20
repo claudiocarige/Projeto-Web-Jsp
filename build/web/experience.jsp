@@ -51,7 +51,7 @@
                                 %>   
                             </small> </span>
                     </form>
-                    <a href="logout.jsp"> <td><img src="./img/logout.png" width="25" alt="Icone do logout"/></td></a> 
+                    <a href="logout.jsp"><img src="./img/logout.png" width="25" alt="Icone do logout"/></a> 
                 </div>
             </nav>
         </section>
@@ -93,7 +93,7 @@
         <div class="container mt-3 pt-5 " id="local1">
             <div class="row">
                 <div class="col text-center mt-2">
-                    <button class="botao" id="exibir4"><h3>Experiências</h></button>
+                    <button class="botao" id="exibir4">Experiências</button>
                     <p class="p2">Minha jornada profissional.</p>
                 </div>
             </div>
@@ -278,7 +278,7 @@
             <section>
                 <div class="row">
                     <div class="col text-center">
-                        <button class="botao" id="exibir5"><h3>SoftSkills</h3></button>
+                        <button class="botao" id="exibir5">SoftSkills</button>
                         <p class="sub-h2">Saiba um pouco como sou.</p>
                     </div>
                 </div>
@@ -301,10 +301,7 @@
                     </div>
                 </div>
             </section>
-
         </div>
-
-
         <div class="col text-center my-5" id="local2">
             <h2>Obrigado por acessar meu portfólio!</h2>
             <p class="sub-h2">Espero que tenha gostado. Volte quando quiser!</p>

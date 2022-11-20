@@ -20,9 +20,9 @@
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.min.js" integrity="sha384-IDwe1+LCz02ROU9k972gdyvl+AESN10+x7tBKgc9I5HFtuNz0wWnPclzo6p9vxnk" crossorigin="anonymous"></script>
         <script src="https://kit.fontawesome.com/56a4a469be.js" crossorigin="anonymous"></script>
     </head>
-    <body style="background-color: #331E4D">
+    <body style="background-color: #2c0c3c">
         <section class="container darkest-bg fixed-top">
-            <nav class="navbar navbar-expand-lg" style="background-color: lightgoldenrodyellow">
+            <nav class="navbar navbar-expand-lg " style="background-color: lightgoldenrodyellow; height: 50px">
                 <div class="container-fluid">
                     <a class="navbar-brand" href="usuarios.jsp"><span style="color:#660066;">Portfólio - Cláudio Carigé</span></a>
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -50,10 +50,10 @@
                                     Usuario usuario2 = usuariodao.findByUser(usuario);
                                 %>  
                                 <script>
-                                document.getElementById('txtnome').value = <%=usuario2.getNome()%>;
+                                    document.getElementById('txtnome').value = <%=usuario2.getNome()%>;
                                 </script>
                             </small> </span>
-                        <a href="logout.jsp"> <td><img src="./img/logout.png" width="25" alt="Icone de Logout"/></td></a>
+                        <a href="logout.jsp"><img src="./img/logout.png" width="25" alt="Icone de Logout"/></a>
                     </form>
                 </div>
             </nav>  
@@ -67,57 +67,53 @@
                 %>
             </div>
         </div>
-        <footer>
-
-            &COPY;2022 - Cláudio Carigé
-
-        </footer>
+        <%    if (nomeSession != null) {%>
+        <script>
+            $(document).ready(function () {
+                $('#modal').modal('show');
+            });
+        </script><% }%>
     </body>
-</html>
-<!-- Modal -->
-<div class="modal " id="modal" tabindex="-1" role="dialog" aria-labelledby="ModalLabel" aria-hidden="true">
-    <div class="modal-dialog">
-        <div class="modal-content">
-            <div class="modal-header">
-                <h3 class="modal-title fs-5" style="color: blue" id="exampleModalLabel">Inserir Usuário</h3>
+    <!-- Modal -->
+    <div class="modal " id="modal" tabindex="-1" role="dialog" aria-labelledby="ModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h3 class="modal-title fs-5" style="color: blue" id="exampleModalLabel">Inserir Usuário</h3>
+                </div>
+                <form id="cadastro-form" class="form" action="" method="post">
+                    <div class="modal-body">
+                        <div class="form-group">
+                            <label for="username" class="text-info">Nome</label><br>
+                            <input type="text" name="txtnome" id="txtnome" class="form-control" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="username" class="text-info">Usuário</label><br>
+                            <input type="text" name="txtusuario" id="txtusuario" class="form-control" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="password" class="text-info">Senha</label><br>
+                            <input type="text" name="txtsenha" id="txtsenha" class="form-control" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="FormControlSelect" class="text-info">Nível</label>
+                            <select class="form-control" name="txtnivel" id="txtnivel">
+                                <option selected>Selecione</option>
+                                <option value="comum">Comum</option>
+                                <option value="admin">Recruiter</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <a href="userlist.jsp" type="button" name="btn-cancelar" class="text-danger">Cancelar</a>
+                        <button type="submit" name="btn-editar" class="btn btn-primary">Editar</button>
+                    </div>
+                </form>
             </div>
-            <form id="cadastro-form" class="form" action="" method="post">
-                <div class="modal-body">
-                    <div class="form-group">
-                        <label for="username" class="text-info">Nome</label><br>
-                        <input type="text" name="txtnome" id="txtnome" class="form-control" required>
-                    </div>
-                    <div class="form-group">
-                        <label for="username" class="text-info">Usuário</label><br>
-                        <input type="text" name="txtusuario" id="txtusuario" class="form-control" required>
-                    </div>
-                    <div class="form-group">
-                        <label for="password" class="text-info">Senha</label><br>
-                        <input type="text" name="txtsenha" id="txtsenha" class="form-control" required>
-                    </div>
-                    <div class="form-group">
-                        <label for="FormControlSelect" class="text-info">Nível</label>
-                        <select class="form-control" name="txtnivel" id="txtnivel">
-                            <option selected>Selecione</option>
-                            <option value="comum">Comum</option>
-                            <option value="admin">Recruiter</option>
-                        </select>
-                    </div>
-                </div>
-                <div class="modal-footer">
-                    <a href="userlist.jsp" type="button" name="btn-cancelar" class="text-danger">Cancelar</a>
-                    <button type="submit" name="btn-editar" class="btn btn-primary">Editar</button>
-                </div>
-            </form>
         </div>
     </div>
-</div>
-<%    if (nomeSession != null) {%>
-<script>
-    $(document).ready(function () {
-        $('#modal').modal('show');
-    });
-</script><% }%>
+    <!-- Fim Modal -->
+</html>
 
 <%    if (request.getParameter("btn-editar") != null) {
         if (usuario2.getUsuario().equals(nomeSession)) {

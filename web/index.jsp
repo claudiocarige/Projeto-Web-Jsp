@@ -81,9 +81,9 @@
                     }
                 %>
             </div>
+        </div>
     </body>
-</html>
-<!-- Modal -->
+    <!-- Modal -->
 <div class="modal " id="modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
     <div class="modal-dialog">
         <div class="modal-content">
@@ -124,6 +124,9 @@
         </div>
     </div>
 </div>
+    <!-- Fim Modal -->
+</html>
+
 <%    if (request.getParameter("btn-salvar") != null) {
         Usuario usuario2 = new Usuario();
         usuario2.setNome(request.getParameter("txtnome"));

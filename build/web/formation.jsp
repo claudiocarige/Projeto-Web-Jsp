@@ -54,7 +54,7 @@
                                 %>   
                             </small> </span>
                     </form>
-                    <a href="logout.jsp"> <td><img src="./img/logout.png" width="25" alt="Icone do Logout"/></td></a> 
+                    <a href="logout.jsp"><img src="./img/logout.png" width="25" alt="Icone do Logout"/></a> 
                 </div>
             </nav>
         </section>
@@ -99,7 +99,7 @@
         <div class="container mt-3 pt-5 " id="local1">
             <div class="row">
                 <div class="col text-center mt-2">
-                    <button class="botao" id="exibir1"><h3>Cursos</h3></button>
+                    <button class="botao" id="exibir1">Cursos</button>
                     <p class="sub-h2">Uma grande Paixão</p>
                     <p class="p2"></p>
                 </div>
@@ -114,7 +114,7 @@
                             <div class="text-center">
                                 <p>Online - set - out /2022</p>
                             </div>
-                            <div class="row"  heigth="200px">
+                            <div class="row">
                                 <div class="col-md-6"> 
                                     <ul>
                                         <li>Java</li>
@@ -123,10 +123,11 @@
                                     </ul>
                                 </div>
                                 <div class="col-md-6">
-
-                                    <li>Java Web</li>
-                                    <li>JavaScript</li>
-                                    <li>Angular</li>
+                                    <ul>
+                                        <li>Java Web</li>
+                                        <li>JavaScript</li>
+                                        <li>Angular</li>
+                                    </ul>
                                 </div>
                             </div>
                         </div>
@@ -151,10 +152,12 @@
                                     </ul>
                                 </div>
                                 <div class="col-md-6">
-                                    <li>SCRUM</li>
-                                    <li>API Restful</li>
-                                    <li>Spring Boot</li>
-                                    <li>Padrões de projeto em Java</li>
+                                    <ul>
+                                        <li>SCRUM</li>
+                                        <li>API Restful</li>
+                                        <li>Spring Boot</li>
+                                        <li>Padrões de projeto em Java</li>
+                                    </ul>
                                 </div>
                             </div>
                         </div>
@@ -177,11 +180,13 @@
                                     </ul>
                                 </div>
                                 <div class="col-md-8">
-                                    <li>Arqivos CSV</li>
-                                    <li>Integração com Excel</li>
-                                    <li>Integração com PDF</li>
-                                    <li>Integração com ArcGIS</li>
-                                    <li>Arquivos JSON</li>
+                                    <ul>
+                                        <li>Arqivos CSV</li>
+                                        <li>Integração com Excel</li>
+                                        <li>Integração com PDF</li>
+                                        <li>Integração com ArcGIS</li>
+                                        <li>Arquivos JSON</li>
+                                    </ul>
                                 </div>
                             </div>
                         </div>
@@ -248,7 +253,7 @@
             <div id="local2"></div>
             <div class="row" >
                 <div class="col text-center ">
-                    <button class="botao" id="exibir2"><h3>HardSkills</h3></button>
+                    <button class="botao" id="exibir2">HardSkills</button>
                     <p class="sub-h2">Linguagens e Ferramentas</p>
                     <p class="p2"></p>
                 </div>  
@@ -271,7 +276,7 @@
 
             <div class="row">
                 <div class="col text-center" id="button-formation">
-                    <button class="botao" id="exibir3"><h3>Contato</h3></button>
+                    <button class="botao" id="exibir3">Contato</button>
                     <p class="sub-h2">Onde me encontrar.</p>
                 </div>
             </div>
@@ -326,7 +331,7 @@
                     i++;
                     if (i === 1 || i % 2) {
                         $("#primeiro").toggle("hide").fadeIn(6000);
-                        
+
                     } else {
                         $("#primeiro").toggle("hide").fadeOut(6000);
                     }

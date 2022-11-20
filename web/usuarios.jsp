@@ -59,7 +59,7 @@
                             %>   
                         </small> </span>
                 </form>
-                <a href="logout.jsp"> <td><img src="./img/logout.png" width="25" alt="Icone do Logout"/></td></a> 
+                <a href="logout.jsp"><img src="./img/logout.png" width="25" alt="Icone do Logout"/></a> 
             </div>
         </nav>
     </section>
