@@ -19,6 +19,7 @@
 
 .navbar{
     background-color: #3d009e;
+
 }
 .lightest-bg {
     background-color: #d2d2d2;
@@ -52,9 +53,14 @@
 
 .container .botao{
     background-color: #3363d6;
+    margin: 0.9rem 0 0.5rem;
     color: white;
-    box-shadow: 2px 2px #331E4D;
-    border-radius: 10%;
+    box-shadow: 10px 3px 9px 0px rgba(0,0,0,0.69);
+    -webkit-box-shadow: 10px 3px 9px 0px rgba(0,0,0,0.69);
+    -moz-box-shadow: 10px 3px 9px 0px rgba(0,0,0,0.69);
+    border-radius: 12px 12px 12px 12px;
+    -webkit-border-radius: 12px 12px 12px 12px;
+    -moz-border-radius: 12px 12px 12px 12px;
     font-size: 25px;
     font-weight: bolder;
 

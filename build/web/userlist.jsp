@@ -59,7 +59,7 @@
                                     String nomeSession = (String) session.getAttribute("nomeUsuario");
                                     out.print(nomeSession);
                                     if (nomeSession == null) {
-                                        response.sendRedirect("index.jsp");
+                                        response.sendRedirect("index.html");
                                     }
                                 %>   
                             </small> </span>

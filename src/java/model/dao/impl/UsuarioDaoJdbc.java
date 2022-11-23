@@ -45,7 +45,7 @@ public class UsuarioDaoJdbc implements UsuarioDao {
             throw new DbException(e.getMessage());
         } finally {
             DB.closeStatment(st);
-            DB.closeConnection();
+       
         }
     }
 
@@ -70,7 +70,7 @@ public class UsuarioDaoJdbc implements UsuarioDao {
             throw new DbException(e.getMessage());
         } finally {
             DB.closeStatment(st);
-            DB.closeConnection();
+          
         }
     }
 
@@ -89,7 +89,7 @@ public class UsuarioDaoJdbc implements UsuarioDao {
             throw new DbException(e.getMessage());
         } finally {
             DB.closeStatment(st);
-            DB.closeConnection();
+           
         }
     }
 
@@ -128,7 +128,7 @@ public class UsuarioDaoJdbc implements UsuarioDao {
         } finally {
             DB.closeStatment(st);
             DB.closeResultSet(rs);
-            DB.closeConnection();
+            
         }
     }
 
@@ -152,7 +152,7 @@ public class UsuarioDaoJdbc implements UsuarioDao {
         } finally {
             DB.closeStatment(st);
             DB.closeResultSet(rs);
-            DB.closeConnection();
+            
         }
     }
 
@@ -178,7 +178,7 @@ public class UsuarioDaoJdbc implements UsuarioDao {
         }finally{
             DB.closeStatment(st);
             DB.closeResultSet(rs);
-            DB.closeConnection();
+         
         }
     }
     
@@ -206,7 +206,7 @@ public class UsuarioDaoJdbc implements UsuarioDao {
         } finally {
             DB.closeStatment(st);
             DB.closeResultSet(rs);
-            DB.closeConnection();
+        
         }
         
     }
@@ -232,7 +232,7 @@ public class UsuarioDaoJdbc implements UsuarioDao {
         }finally{
             DB.closeStatment(st);
             DB.closeResultSet(rs);
-            DB.closeConnection();
+         
         }
     }
 }

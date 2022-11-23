@@ -1,5 +1,5 @@
 <%-- 
-    Document   : index
+    Document   : home
     Created on : 04/11/2022, 22:37:41
     Author     : ccari
 --%>
@@ -40,7 +40,7 @@
                 <div id="login-row" class="row justify-content-center align-items-center">
                     <div id="login-column" class="col-md-6">
                         <div id="login-box" class="col-md-12">
-                            <form id="login-form" class="form" action="index.jsp" method="post">
+                            <form id="login-form" class="form" action="home.jsp" method="post">
                                 <h3 class="text-center text-info">Login</h3>
                                 <div class="form-group">
                                     <label for="username" class="text-info">Usuário</label><br>

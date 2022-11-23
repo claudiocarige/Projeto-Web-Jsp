@@ -42,7 +42,7 @@
                                     out.print(nomeSession);
 
                                     if (nomeSession == null) {
-                                        response.sendRedirect("index.jsp");
+                                        response.sendRedirect("index.html");
                                     }
                                     Usuario usuario = new Usuario();
                                     usuario.setUsuario(request.getParameter("id"));
