@@ -1,8 +1,3 @@
-<%-- 
-    Document   : experience
-    Created on : 10/11/2022, 23:21:36
-    Author     : ccari
---%>
 
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
@@ -25,7 +20,7 @@
             <div class="row">
                 <div class="col-md-12">
                     <div class="heading">				
-                        <h5>Software Engineer</h5> 
+                        <h5>Desenvolvedor</h5> 
                     </div>
                 </div>	
             </div>

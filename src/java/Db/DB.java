@@ -15,12 +15,12 @@ public class DB {
     private static Connection connection = null;
 
     public static Connection getConnection() throws SQLException {
-
+        String url = "jdbc:mysql://localhost:3307/webjsp";
+        String usuario = "root";
+        String senha = "Mklauro@2022";
         try {
-            Class.forName("com.mysql.cj.jdbc.Driver");
-            connection = DriverManager.getConnection("jdbc:mysql://localhost:3307/"
-                    + "webjsp?useTimeZone=True&serverTimeZone=UTC&"
-                    + "user=root&password=Mklauro@2022");
+            Class.forName("com.mysql.jdbc.Driver");
+            connection = DriverManager.getConnection(url, usuario, senha);
 
         } catch (ClassNotFoundException e) {
 

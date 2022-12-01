@@ -109,7 +109,7 @@
                             </div>
                             <div class="row">
                                 <div class="col-md-12"> 
-                                    <p>Cargo: <b>Software Engineer</b></p>
+                                    <p>Cargo: <b>Desenvolvedor</b></p>
                                     <ul>
                                         <li>Metodologia SCRUM</li>
                                         <li>Definição do projeto básico</li>
@@ -142,7 +142,7 @@
                                 <h6>Atividades Realizadas</h6>
                             </div>
                             <div class="row">
-                                <p>Cargo: <b>Software Engineer</b></p>
+                                <p>Cargo: <b>Desenvolvedor</b></p>
                                 <ul>
                                     <li>Criação do DataBase</li>
                                     <li>Criação das Classes</li>
@@ -169,7 +169,7 @@
                                 <h6>Atividades Realizadas</h6>
                             </div>
                             <div class="row">
-                                <p>Cargo: <b>Software Engineer</b></p>
+                                <p>Cargo: <b>Desenvolvedor</b></p>
                                 <ul>
                                     <li>Criação e Administração</li>
                                     <li>Criação do Banco de Dados</li>
@@ -240,7 +240,7 @@
                             </div>
                             <section>
                                 <div class="text-md-justify">
-                                    <p>Na cervejaria eu era um dos sócios. Nós tinhamos 2 funcionários, que trabalhavam na area de produção. Eu gerenciava toda a produção da fábrica, que girava em torno de 5.000 litros /mês. Além dissi estava sempre em contato com os clientes para confirmar os estoques e fazer os pedidos para venda.</p>
+                                    <p>Na cervejaria eu era um dos sócios. Nós tinhamos 2 funcionários, que trabalhavam na area de produção. Eu gerenciava toda a produção da fábrica, que girava em torno de 5.000 litros /mês. Além disso estava sempre em contato com os clientes para confirmar os estoques e fazer os pedidos para venda.</p>
                                 </div>
                             </section>
                         </div>

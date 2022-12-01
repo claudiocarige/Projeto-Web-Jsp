@@ -25,7 +25,7 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="description" content="Portfólio de apresentação profissional na área de tecnologia">
         <meta name="keywords" content="Java, JavaScript, Css, Html, Desenvolvedor, Desenvolvedor java">
-        <title>Portfolio de Cláudio Carigé, Login e cadastro.</title>
+        <title>Portfolio de Cláudio Carigé, Login e cadastro.</title>   
         <link href="css/style.css" rel="stylesheet">
         <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg==" crossorigin="anonymous"></script>
@@ -35,7 +35,7 @@
     </head>
     <body class="body-back">
         <div id="login">
-            <h3 class="text-center text-white pt-5">Projeto Cláudio</h3>
+            <h2 class="text-center text-white pt-5">Portfólio de Cláudio Carigé</h2>
             <div class="container">
                 <div id="login-row" class="row justify-content-center align-items-center">
                     <div id="login-column" class="col-md-6">
@@ -61,17 +61,17 @@
                         </div>
                     </div>
                 </div>  
-                <%// 
-                    String user = request.getParameter("txtusuario");
-                    String pass = request.getParameter("txtsenha");
-        
-                    Usuario obj = new Usuario();
-                    obj.setUsuario(user);
-                    obj.setSenha(pass);
-                    UsuarioDao usuarioDao = DaoFactory.createUsuarioDao();
-                    Usuario usuario = usuarioDao.findByNameLogin(obj);
-
+                <%
                     if (request.getParameter("submit") != null) {
+                        String user = request.getParameter("txtusuario");
+                        String pass = request.getParameter("txtsenha");
+
+                        Usuario obj = new Usuario();
+                        obj.setUsuario(user);
+                        obj.setSenha(pass);
+                        UsuarioDao usuarioDao = DaoFactory.createUsuarioDao();
+                        Usuario usuario = usuarioDao.findByNameLogin(obj);
+
                         if (usuario != null) {
                             session.setAttribute("nomeUsuario", usuario.getUsuario());
                             response.sendRedirect("usuarios.jsp");
@@ -81,49 +81,53 @@
                     }
                 %>
             </div>
+
+        </div>
+        <div class="inform">
+            <p>Para o primeiro acesso, cadastre-se.<p>
         </div>
     </body>
     <!-- Modal -->
-<div class="modal " id="modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-    <div class="modal-dialog">
-        <div class="modal-content">
-            <div class="modal-header">
-                <h3 class="modal-title fs-5" style="color: blue" id="exampleModalLabel">Inserir Usuário</h3>
-                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
-                    <span aria-hidden>&times;</span>
-                </button>
+    <div class="modal " id="modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h3 class="modal-title fs-5" style="color: blue" id="exampleModalLabel">Inserir Usuário</h3>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
+                        <span aria-hidden>&times;</span>
+                    </button>
+                </div>
+                <form id="cadastro-form" class="form" action="" method="post">
+                    <div class="modal-body">
+                        <div class="form-group">
+                            <label for="username" class="text-info">Nome</label><br>
+                            <input type="text" name="txtnome" id="txtnome" class="form-control" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="username" class="text-info">Usuário</label><br>
+                            <input type="text" name="txtusuario" id="txtusuario" class="form-control" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="password" class="text-info">Senha</label><br>
+                            <input type="text" name="txtsenha" id="txtsenha" class="form-control" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="FormControlSelect" class="text-info">Nível</label>
+                            <select class="form-control" name="txtnivel" id="txtnivel">
+                                <option selected>Selecione</option>
+                                <option value="comum">Comum</option>
+                                <option value="recruiter">Recruiter</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+                        <button type="submit" name="btn-salvar" class="btn btn-primary">Salvar</button>
+                    </div>
+                </form>
             </div>
-            <form id="cadastro-form" class="form" action="" method="post">
-                <div class="modal-body">
-                    <div class="form-group">
-                        <label for="username" class="text-info">Nome</label><br>
-                        <input type="text" name="txtnome" id="txtnome" class="form-control" required>
-                    </div>
-                    <div class="form-group">
-                        <label for="username" class="text-info">Usuário</label><br>
-                        <input type="text" name="txtusuario" id="txtusuario" class="form-control" required>
-                    </div>
-                    <div class="form-group">
-                        <label for="password" class="text-info">Senha</label><br>
-                        <input type="text" name="txtsenha" id="txtsenha" class="form-control" required>
-                    </div>
-                    <div class="form-group">
-                        <label for="FormControlSelect" class="text-info">Nível</label>
-                        <select class="form-control" name="txtnivel" id="txtnivel">
-                            <option selected>Selecione</option>
-                            <option value="comum">Comum</option>
-                            <option value="admin">Recruiter</option>
-                        </select>
-                    </div>
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
-                    <button type="submit" name="btn-salvar" class="btn btn-primary">Salvar</button>
-                </div>
-            </form>
         </div>
     </div>
-</div>
     <!-- Fim Modal -->
 </html>
 

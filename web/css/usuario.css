@@ -38,6 +38,10 @@
     top: 30px;
     padding: auto;
 }
+
+.navbar .container-fluid navbar-collapse #link-nav-crud {
+    transition: .3s all;
+}
 ul{
   margin:0;
   padding:0;

@@ -43,7 +43,7 @@
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                         <li class="nav-item">
-                            <a class="nav-link" href="userlist.jsp" style="color:#660066;">CRUD</a>
+                            <a class="nav-link" id="link-nav-crud" href="userlist.jsp" style="color:#660066;">CRUD</a>
                         </li>
                     </ul>
                 </div>
@@ -72,8 +72,8 @@
                 <li class="col-12 col-md-6 col-lg-3">
                     <div class="cnt-block equal-hight hide" id="opcao1" >
                         <figure><a href="sobremim.jsp"><img src="img/FotoClaudio.jpg" class="img-responsive" alt="Foto Cláudio Carigé" width="50px"></a></figure>
-                        <h3><a>About me</a></h3>
-                        <p>Software Engineer</p>
+                        <h3><a href="sobremim.jsp">Sobre mim</a></h3>
+                        <p>Desenvolvedor</p>
                         <ul class="follow-us clearfix">
                             <li><a href="https://github.com/claudiocarige" target="_blank"><i class="fa fa-github" aria-hidden="true"></i></a></li>
                             <li><a href="https://www.linkedin.com/in/claudio-carige-b7429b6b/" target="_blank"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
@@ -83,21 +83,21 @@
                 <li class="col-12 col-md-6 col-lg-3 ">
                     <div class="cnt-block equal-hight margim hide " id="opcao2">
                         <figure><a href="experience.jsp" ><img src="img/experienciaoOk.png" class="img-responsive" style="height:160px; width: 160px" alt="Imagem com Icone que se refere a Experiência, uma maleta e engrenagem"></a></figure>
-                        <h3><a>Professional experience</a></h3>
+                        <h3><a href="experience.jsp">Experiência Profissional</a></h3>
                         <p>Conheça minhas Experiências</p>
                     </div>
                 </li>
                 <li class="col-12 col-md-6 col-lg-3 ">
                     <div class="cnt-block equal-hight margim hide" id="opcao3" >
                         <figure><a href="formation.jsp"><img src="img/courseOk.png" class="img-responsive" alt="Imagem com Icone que se refere a Formação, um monitor com capelo, ou chapéu de formatura." style="width: 160px; height: 160px"></a></figure>
-                        <h3><a>Academic training</a></h3>
+                        <h3><a href="formation.jsp">Formação</a></h3>
                         <p>Veja minha formação e  meus conhecimentos.</p>
                     </div>
                 </li>
                 <li class="col-12 col-md-6 col-lg-3 " >
                     <div class="cnt-block equal-hight margim hide" id="opcao4">
                         <figure><a  href="userlist.jsp"><img src="img/crudOk.png" class="img-responsive" alt="Imagem com Icone que se refere a uma CRUD, que são as quatro operações básicas para banco de dados. Uma cabeça abrindo e saindo uma lampada." style="width: 160px; height: 160px"></a></figure>
-                        <h3><a>CRUD </a></h3>
+                        <h3><a href="userlist.jsp">CRUD </a></h3>
                         <p>Editar / Buscar / Excluir </p>
                     </div>
                 </li>
