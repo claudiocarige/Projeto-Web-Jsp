@@ -1,4 +1,6 @@
-
+html{
+    min-width: 250px;
+}
 .direita{
     position: absolute;
     right: 30px;

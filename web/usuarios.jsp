@@ -32,39 +32,41 @@
     <script src="js/jquery-3.6.1.min.js"></script>
 
 </head>
-<body class="">
+<body>
     <section class="container darkest-bg fixed-top">
-        <nav class="navbar navbar-expand-lg " style="background-color: lightgoldenrodyellow; height: 50px">
+        <nav class="navbar" style="background-color: lightgoldenrodyellow; height: 50px">
             <div class="container-fluid">
                 <a class="navbar-brand" href="usuarios.jsp"><span style="color:#660066;">Portfólio - Cláudio Carigé</span></a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                
                     <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                         <li class="nav-item">
                             <a class="nav-link" id="link-nav-crud" href="userlist.jsp" style="color:#660066;">CRUD</a>
                         </li>
                     </ul>
-                </div>
-                <form class="form-inline my-2 my-lg-0">
-                    <span class="m-3" style="color: lightseagreen"><small>
-                            <%
-                                String nomeSession = (String) session.getAttribute("nomeUsuario");
-                                out.print(nomeSession);
+              
+                <div class="container-session">
+                    <form class="form-inline my-2 my-lg-0">
+                        <span class="m-3" style="color: lightseagreen"><small>
+                                <%
+                                    String nomeSession = (String) session.getAttribute("nomeUsuario");
+                                    out.print(nomeSession);
 
-                                if (nomeSession == null) {
-                                    response.sendRedirect("index.html");
-                                }
-                            %>   
-                        </small> </span>
-                </form>
-                <a href="logout.jsp"><img src="./img/logout.png" width="25" alt="Icone do Logout"/></a> 
+                                    if (nomeSession == null) {
+                                        response.sendRedirect("index.html");
+                                    }
+                                %>   
+                            </small> </span>
+                    </form>
+                    <a href="logout.jsp"><img src="./img/logout.png" width="25" alt="Icone do Logout"/></a> 
+                </div>
             </div>
         </nav>
     </section>
     <section class="our-webcoderskull padding-lg middle-bg" >
-        <div class="container">
+        <div class="container-second">
             <div class="row heading heading-icon">
                 <h2>Portfólio</h2>
             </div>
@@ -76,7 +78,7 @@
                         <p>Desenvolvedor</p>
                         <ul class="follow-us clearfix">
                             <li><a href="https://github.com/claudiocarige" target="_blank"><i class="fa fa-github" aria-hidden="true"></i></a></li>
-                            <li><a href="https://www.linkedin.com/in/claudio-carige-b7429b6b/" target="_blank"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+                            <li><a href="https://www.linkedin.com/in/claudiocarige" target="_blank"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
                         </ul>
                     </div>
                 </li>
@@ -110,7 +112,7 @@
             $("#opcao2").slideUp().delay(400).slideDown(1200);
             $("#opcao3").slideUp().delay(500).slideDown(1600);
             $("#opcao4").slideUp().delay(600).slideDown(2000);
-            
+
         });
     </script>
 </body>

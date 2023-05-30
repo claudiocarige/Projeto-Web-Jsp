@@ -35,7 +35,7 @@
                             </li>
                         </ul>
                     </div>
-                    <form class="form-inline my-2 my-lg-0">
+                    <form class="form-inline my-2 my-lg-0" method="post">
                         <span class="m-3" style="color: lightseagreen"><small>
                                 <%
                                     String nomeSession = (String) session.getAttribute("nomeUsuario");
@@ -45,7 +45,7 @@
                                         response.sendRedirect("index.html");
                                     }
                                     Usuario usuario = new Usuario();
-                                    usuario.setUsuario(request.getParameter("id"));
+                                    usuario.setUsuario(request.getParameter("usuario"));
                                     UsuarioDao usuariodao = DaoFactory.createUsuarioDao();
                                     Usuario usuario2 = usuariodao.findByUser(usuario);
                                 %>  

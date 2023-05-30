@@ -2,6 +2,10 @@
     Created on : 13/11/2022, 23:25:48
     Author     : ccari
 */
+
+html{
+    min-width: 250px;
+}
 @keyframes animacao{
 
     0%{

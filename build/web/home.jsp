@@ -34,10 +34,11 @@
         <script src="https://kit.fontawesome.com/56a4a469be.js" crossorigin="anonymous"></script>
     </head>
     <body class="body-back">
-        <div id="login">
+        <div id="login" >
             <h2 class="text-center text-white pt-5">Portfólio de Cláudio Carigé</h2>
-            <div class="container">
-                <div id="login-row" class="row justify-content-center align-items-center">
+            <p>Criado com Java Web JSP</p>
+            <div class="container">              
+                <div id="login-row" class="container-form row justify-content-center align-items-center">
                     <div id="login-column" class="col-md-6">
                         <div id="login-box" class="col-md-12">
                             <form id="login-form" class="form" action="home.jsp" method="post">
@@ -55,11 +56,13 @@
                                     <input type="submit" name="submit" class="btn btn-info btn-md"  value="Logar">
                                 </div>
                                 <div id="register-link" class="text-right">
-                                    <a name="btn-cadastrar" class="text-info" data-bs-toggle="modal" data-bs-target="#modal" style="cursor: pointer; color: blueviolet; text-align: right; font-size: 20px" >Cadastre-se</a>
+                                    <a name="btn-cadastrar" class="text-info" data-bs-toggle="modal" data-bs-target="#modal" style="cursor: pointer; color: blueviolet; text-align: right; font-size: 20px" ><span class="span-title">Cadastre-se</span></a>
                                 </div>
                             </form>
                         </div>
+                        
                     </div>
+   
                 </div>  
                 <%
                     if (request.getParameter("submit") != null) {
@@ -82,9 +85,6 @@
                 %>
             </div>
 
-        </div>
-        <div class="inform">
-            <p>Para o primeiro acesso, cadastre-se.<p>
         </div>
     </body>
     <!-- Modal -->

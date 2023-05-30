@@ -53,7 +53,7 @@
                             </li>
                         </ul>
                     </div>
-                    <form class="form-inline my-2 my-lg-0">
+                    <form class="form-inline my-2 my-lg-0" method="POST" >
                         <span class="m-3" style="color: lightseagreen"><small>
                                 <%
                                     String nomeSession = (String) session.getAttribute("nomeUsuario");
@@ -73,7 +73,7 @@
             <div class="row mt-5 mb-4">
                 <a href="userlist.jsp" class="btn btn-outline-success listar" id="buttonUsuario">Listar Todos</a>
 
-                <form class="form-inline my-2 my-lg-0 direita" role="search" method="post">
+                <form class="form-inline my-2 my-lg-0 direita" role="search" method="POST">
                     <!--<a href="userlist.jsp" class="btn btn-outline-info" style="left:0;">Listar Todos</a>-->
                     <input class="form-control form-control-sm mr-sm-2" type="search" name="txtbuscar" placeholder="Buscar pelo nome" aria-label="Search">
                     <button class="btn btn-outline-info btn-sm my-2 my-sm-0" type="submit" name="btn-buscar">Buscar</button>
@@ -104,13 +104,13 @@
                         }
                         for (Usuario usuario2 : list) {
                     %> 
-                    <tr style="font-size: 15px; color: khaki">
+                    <tr style="font-size: 15px; color: khaki" method="POST">
                         <th><%=usuario2.getId()%></th>
                         <td><%=usuario2.getNome()%></td>
                         <td><%=usuario2.getUsuario()%></td>
                         <td><%=usuario2.getNivel()%></td>
-                        <td><a href="editarusuario.jsp?id=<%=usuario2.getUsuario()%>"  type="button" class="text-info" data-ls-module="modal" data-action="editarusuario.jsp"><i class="fa fa-edit fa-lg"></i></a></td>
-                        <td><a href="userlist.jsp?funcao=excluir&id=<%=usuario2.getId()%>" class="text-danger"><i class="fa fa-trash-alt fa-lg"></i></a></td>
+                        <td><a href="editarusuario.jsp?usuario=<%=usuario2.getUsuario()%>" method="POST" type="submit" class="text-info" data-ls-module="modal" data-action="editarusuario.jsp"><i class="fa fa-edit fa-lg"></i></a></td>
+                        <td><a href="userlist.jsp?funcao=excluir&id=<%=usuario2.getId()%>" method="POST" class="text-danger"><i class="fa fa-trash-alt fa-lg"></i></a></td>
                     </tr>
                     <%
                         }

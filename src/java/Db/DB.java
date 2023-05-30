@@ -15,9 +15,9 @@ public class DB {
     private static Connection connection = null;
 
     public static Connection getConnection() throws SQLException {
-        String url = "jdbc:mysql://localhost:3307/webjsp";
-        String usuario = "root";
-        String senha = "Mklauro@2022";
+        String url = "jdbc:mysql://database-portfolio-webjsp.ceoamqm81vf5.sa-east-1.rds.amazonaws.com:3306/webjsp";
+        String usuario = "admin";
+        String senha = "Mklauro2023";
         try {
             Class.forName("com.mysql.jdbc.Driver");
             connection = DriverManager.getConnection(url, usuario, senha);
